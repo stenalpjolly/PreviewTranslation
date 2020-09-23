@@ -1,0 +1,33 @@
+<idea-plugin>
+  <id>com.synamedia.stenal.ctap.previewtranslation</id>
+  <name>Preview CTAP Dict</name>
+  <version>1.0</version>
+  <vendor email="sjolly@synamedia.com" url="http://www.synamedia.com">Synamedia</vendor>
+
+  <description><![CDATA[
+      Preview CTAP Dict
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Preview CTAP Dict
+    ]]>
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="PreviewTranslation"
+            class="com.synamedia.stenal.ctap.previewtranslation.listeners.PreviewTranslation"
+            text="Preview Translation" description="Preview translation"/>
+  </actions>
+
+</idea-plugin>
